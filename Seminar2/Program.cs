@@ -69,7 +69,7 @@ int ShowThirdNumber(int number, int amount)
 
     int divider = 1;
 
-    // Инициализируем цикл в котором увеличиваем делимое, чтобы в дальнейшем отсечь не нужное от числа.
+    // Инициализируем цикл в котором увеличиваем делитель, чтобы в дальнейшем отсечь не нужное от числа.
     while(amount > 0)
     {
         divider *= 10;
@@ -91,7 +91,7 @@ int serialNum = 3; // Переменная, которая указывает к
 // избавиться от магического числа.
 
 // Проверяем есть ли третья цифра в числе и если нет, то выводим сообщение.
-if(amountOfNum >= 3)
+if(amountOfNum >= serialNum)
 {
     int result = ShowThirdNumber(num, amountOfNum - serialNum);
     Console.WriteLine($"Третья цифра числа {num} равняется {result}.\n");
